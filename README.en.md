@@ -2,7 +2,7 @@
 
 > iOS/iPadOS rule-based proxy client - public IPA release page
 
-[简体中文](README.md) | [Installation](INSTALL.md) | [Privacy](PRIVACY.md) | [FAQ](FAQ.md) | [Issues](https://github.com/zhongaiyemaozi/vpnova/issues) | [Releases](https://github.com/zhongaiyemaozi/vpnova/releases)
+[简体中文](README.md) | [Versions](VERSIONS.md) | [Installation](INSTALL.md) | [Privacy](PRIVACY.md) | [FAQ](FAQ.md) | [Issues](https://github.com/zhongaiyemaozi/vpnova/issues) | [Releases](https://github.com/zhongaiyemaozi/vpnova/releases)
 
 VPNova is an iOS/iPadOS rule-based proxy utility client. It helps users manage their own proxy nodes and route traffic by domain, IP, geolocation, and fallback rules.
 
@@ -11,6 +11,8 @@ VPNova is an iOS/iPadOS rule-based proxy utility client. It helps users manage t
 ## Current Status
 
 This repository is prepared as the public release entry for VPNova. The first IPA will be published through [GitHub Releases](https://github.com/zhongaiyemaozi/vpnova/releases) after a release build is ready.
+
+Version numbers, build numbers, new features, and known issues are tracked separately in [VERSIONS.md](VERSIONS.md).
 
 Each release should include:
 
