@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Local editor files
+.idea/
+.vscode/
+
+# Local release artifacts
+# Upload IPA files to GitHub Releases instead of committing large binaries to Git.
+*.ipa
+*.xcarchive
+*.dSYM.zip
+*.mobileprovision
+*.p12
+*.cer
+*.key
+
+# Local notes that may contain secrets
+local/
+*.local.md

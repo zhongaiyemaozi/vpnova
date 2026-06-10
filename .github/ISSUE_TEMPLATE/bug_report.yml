@@ -1,0 +1,91 @@
+name: Bug report
+description: Report an installation, crash, import, VPN connection, or UI problem
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a VPNova issue. Remove all secrets before posting logs, screenshots, subscription URLs, QR codes, or proxy details.
+  - type: input
+    id: app_version
+    attributes:
+      label: VPNova version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: ios_version
+    attributes:
+      label: iOS/iPadOS version
+      placeholder: "iOS 18.5"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      placeholder: "iPhone 15 Pro, iPad mini 6, etc."
+    validations:
+      required: true
+  - type: dropdown
+    id: install_method
+    attributes:
+      label: Installation method
+      options:
+        - AltStore
+        - Sideloadly
+        - Xcode
+        - Apple Configurator
+        - Enterprise signing
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Problem area
+      options:
+        - Installation
+        - App launch
+        - VPN connection
+        - Node import
+        - Subscription import
+        - Rules
+        - DNS
+        - Traffic stats
+        - UI
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the issue clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open VPNova
+        2. Tap ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Paste sanitized logs or attach screenshots. Remove tokens, passwords, private keys, and server credentials.
+    validations:
+      required: false
