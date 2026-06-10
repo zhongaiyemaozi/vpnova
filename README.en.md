@@ -10,9 +10,11 @@ VPNova is an iOS/iPadOS rule-based proxy utility client. It helps users manage t
 
 ## Current Status
 
-This repository is prepared as the public release entry for VPNova. The first IPA will be published through [GitHub Releases](https://github.com/zhongaiyemaozi/vpnova/releases) after a release build is ready.
+This repository is prepared as the public release entry for VPNova. Public packages are published through [GitHub Releases](https://github.com/zhongaiyemaozi/vpnova/releases).
 
 Version numbers, build numbers, new features, and known issues are tracked separately in [VERSIONS.md](VERSIONS.md).
+
+The current IPA is an unsigned package intended for third-party re-signing. It cannot be installed directly; users must re-sign it with their own Apple certificate, provisioning profiles, and entitlements.
 
 Each release should include:
 

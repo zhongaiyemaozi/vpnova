@@ -4,15 +4,29 @@
 
 ## 当前公开版本
 
-暂未发布 IPA。
+最新版本：`v1.0.0-build2`
 
-首次 IPA 完成后，会在这里更新版本信息，并同步上传到 GitHub Releases：
+下载地址：
 
-https://github.com/zhongaiyemaozi/vpnova/releases
+- Release：https://github.com/zhongaiyemaozi/vpnova/releases/tag/v1.0.0-build2
+- IPA：`VPNova-v1.0.0-build2.ipa`
+- SHA-256：`ca62916d4f43277eca9dc0f189c5022d9233b5bf00ad80e6bac78dfd776075ad`
 
-## v1.0.0 build TBD
+## v1.0.0 build 2
 
-状态：计划发布
+状态：已发布
+
+### 发布类型
+
+未签名二次签名包。
+
+这个 IPA 不能直接安装。安装前需要使用用户自己的 Apple 证书、描述文件和 entitlements 重新签名：
+
+- `Payload/VPNova.app`
+- `Payload/VPNova.app/PlugIns/PacketTunnel.appex`
+- App 内的 Frameworks / dylib，如果重签工具要求递归签名
+
+PacketTunnel 需要签名账号具备 NetworkExtension `packet-tunnel-provider` 权限。
 
 ### 新增功能
 
@@ -33,17 +47,15 @@ https://github.com/zhongaiyemaozi/vpnova/releases
 
 ### 已知问题
 
-- IPA 暂未发布
 - 侧载安装效果取决于签名方式、描述文件、设备和账号权限
 - NetworkExtension 能力需要正确签名和授权
+- 未签名 IPA 不能直接安装
 
 ### 下载
 
-发布后会提供：
-
-- IPA 下载链接
-- SHA-256 校验值
-- Release notes
+- Release：https://github.com/zhongaiyemaozi/vpnova/releases/tag/v1.0.0-build2
+- IPA：`VPNova-v1.0.0-build2.ipa`
+- SHA-256：`ca62916d4f43277eca9dc0f189c5022d9233b5bf00ad80e6bac78dfd776075ad`
 
 ## 版本记录模板
 
