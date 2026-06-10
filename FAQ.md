@@ -1,35 +1,63 @@
-# VPNova FAQ
+# VPNova 常见问题
 
-## Is VPNova open source?
+## VPNova 是开源项目吗？
 
-No. This repository is for public IPA distribution and release support only. It does not contain the VPNova application source code.
+不是。这个仓库只用于公开发布 IPA、维护版本说明、提供安装文档和收集问题反馈，不包含 VPNova 应用源码。
 
-## Why is the IPA not on the App Store?
+更准确地说，VPNova 当前是“公开发布 IPA”，不是“源码开源”。
 
-VPN and proxy apps can be difficult to publish through the App Store when using personal developer accounts and NetworkExtension capabilities. This repository provides an alternative public distribution channel for users who can install signed IPA files themselves.
+## 为什么不放到 App Store？
 
-## Does VPNova include free proxy servers?
+VPN 和代理类 App 在 App Store 上架时会受到 NetworkExtension 权限、账号类型、审核规则和应用描述等多方面限制。当前这个仓库用于提供一个公开下载入口，让能够自行签名或侧载 IPA 的用户进行安装。
 
-No. VPNova is a client. You need to provide your own proxy server, subscription, or configuration URI.
+## VPNova 是否提供免费节点？
 
-## Is VPNova a full VPN service?
+不提供。VPNova 是客户端工具，不是代理服务商。你需要使用自己的代理服务器、订阅链接或配置 URI。
 
-VPNova uses iOS VPN APIs to create a local tunnel and route traffic through user-configured proxy nodes. It is not a hosted VPN service and does not sell server access.
+## VPNova 是完整 VPN 服务吗？
 
-## Can I install it without a computer?
+VPNova 使用 iOS VPN API 创建本地 Packet Tunnel，并按照用户配置把流量路由到代理节点。它不是托管 VPN 服务，也不销售服务器访问权限。
 
-That depends on your signing method and iOS environment. Many sideloading workflows require a computer, developer account, enterprise profile, or third-party signing service.
+## 没有电脑可以安装吗？
 
-## Why does iOS ask me to allow VPN configuration?
+取决于你的签名和侧载方式。很多 IPA 安装流程需要电脑、Apple ID、开发者账号、企业签名或第三方签名服务。
 
-iOS requires user approval before any app can add or manage a VPN profile. VPNova needs this permission to create the Packet Tunnel used for proxy routing.
+## 为什么 iOS 要求允许 VPN 配置？
 
-## Can I use subscription links?
+iOS 要求所有使用 VPN 能力的 App 都必须由用户明确授权。VPNova 需要这个权限来创建本地代理隧道。
 
-Yes, the app is designed to support common subscription formats, including Shadowrocket-style base64 lists, Clash YAML, sing-box JSON, and plain URI lists.
+## 可以导入订阅链接吗？
 
-## Where should I report bugs?
+可以。VPNova 设计上支持常见订阅格式，包括 Shadowrocket/Base64 列表、Clash YAML、sing-box JSON 和普通 URI 列表。
 
-Open a GitHub Issue in this repository and include app version, iOS version, device model, installation method, and clear reproduction steps.
+## 可以导入二维码吗？
 
-Do not post secrets, passwords, proxy credentials, private keys, subscription tokens, or QR codes in public issues.
+可以。二维码导入需要相机权限。VPNova 只在扫描节点二维码时使用相机。
+
+## 支持哪些 iOS 版本？
+
+计划支持 iOS/iPadOS 15.0 或更高版本。VPN 连接行为需要在真实 iPhone 或 iPad 上测试，模拟器不能完整验证。
+
+## 为什么安装后 VPN 连接失败？
+
+常见原因包括节点配置错误、服务器不可用、签名缺少 NetworkExtension 权限、设备策略限制、订阅节点格式异常或当前网络阻断对应协议。
+
+请先确认节点在其他客户端中可用，再反馈 VPNova 的具体问题。
+
+## 如何反馈问题？
+
+请打开 GitHub Issue：
+
+https://github.com/zhongaiyemaozi/vpnova/issues
+
+反馈时建议提供：
+
+- VPNova 版本
+- iOS/iPadOS 版本
+- 设备型号
+- 安装方式
+- 问题描述
+- 复现步骤
+- 已脱敏的日志或截图
+
+请不要公开发布密码、私钥、订阅 token、节点二维码、证书或描述文件。

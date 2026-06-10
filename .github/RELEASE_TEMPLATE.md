@@ -1,33 +1,33 @@
 # VPNova vX.Y.Z
 
-## Download
+## 下载
 
-- IPA: `VPNova-vX.Y.Z.ipa`
-- SHA-256: `<paste checksum here>`
+- IPA：`VPNova-vX.Y.Z.ipa`
+- SHA-256：`<在这里填写校验值>`
 
-## Compatibility
+## 兼容性
 
-- iOS/iPadOS: 15.0 or later
-- Devices: iPhone and iPad
-- Install method: signed IPA sideloading
+- 系统：iOS/iPadOS 15.0 或更高版本
+- 设备：iPhone 和 iPad
+- 安装方式：已签名 IPA 侧载安装
 
-## Highlights
+## 本次更新
 
-- Add release highlights here.
+- 在这里填写用户可见的更新内容。
 
-## Changes
+## 修复
 
-- Add user-facing changes here.
+- 在这里填写修复的问题。
 
-## Known Issues
+## 已知问题
 
-- Add known issues here.
+- 在这里填写已知问题。
 
-## Install Notes
+## 安装说明
 
-1. Download the IPA from this release.
-2. Verify the SHA-256 checksum.
-3. Install with your preferred signing or sideloading tool.
-4. Open VPNova and allow VPN configuration when prompted.
+1. 下载本 Release 中的 IPA。
+2. 校验 SHA-256。
+3. 使用你自己的签名或侧载工具安装。
+4. 打开 VPNova，并按系统提示允许添加 VPN 配置。
 
-Do not share proxy credentials, private keys, subscription tokens, or QR codes in public comments.
+请不要在公开评论中分享代理密码、私钥、订阅 token、节点二维码、证书或描述文件。

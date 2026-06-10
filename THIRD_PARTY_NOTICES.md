@@ -1,26 +1,26 @@
-# Third-Party Notices
+# 第三方组件说明
 
-This repository is used for distributing VPNova IPA builds and release documentation. The IPA may include third-party open-source components.
+这个仓库用于发布 VPNova IPA 和相关文档。IPA 可能包含第三方开源组件。
 
 ## sing-box / libbox
 
-VPNova uses sing-box/libbox as the proxy engine in the iOS NetworkExtension target.
+VPNova 使用 sing-box/libbox 作为 iOS NetworkExtension 中的代理核心。
 
-- Project: https://github.com/SagerNet/sing-box
-- Documentation: https://sing-box.sagernet.org/
-- License note: sing-box packaging metadata identifies the project license as `GPL-3.0-or-later`.
+- 项目地址：https://github.com/SagerNet/sing-box
+- 文档地址：https://sing-box.sagernet.org/
+- 许可证提示：sing-box 的项目元数据标识其许可证为 `GPL-3.0-or-later`。
 
-Before distributing a public IPA that includes sing-box/libbox, review the license obligations carefully. Depending on how the binary is linked and distributed, you may need to provide corresponding source code, license text, copyright notices, build instructions, or another compliant distribution path.
+公开分发包含 sing-box/libbox 的 IPA 前，需要认真确认许可证义务。根据实际链接、修改和分发方式，可能需要提供对应源码、许可证文本、版权说明、构建说明或其他合规分发方式。
 
-This file is not legal advice. Confirm final distribution requirements before publishing a public release.
+这个文件不是法律意见。正式公开发布前，请确认最终分发方式满足相关许可证要求。
 
-## Future Notices
+## 后续维护
 
-For each public release, add:
+每次公开发布时，建议补充：
 
-- Third-party component name
-- Version or commit
-- License
-- Source URL
-- Required notice text
-- Any source-code offer or build instructions required by the license
+- 第三方组件名称
+- 版本号或 commit
+- 许可证
+- 源码地址
+- 必须保留的 notice 文本
+- 许可证要求的源码提供方式或构建说明

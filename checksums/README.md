@@ -1,14 +1,14 @@
-# Checksums
+# 校验值
 
-Publish SHA-256 checksums for public IPA files here or directly in each GitHub Release.
+公开 IPA 的 SHA-256 校验值可以放在这里，也可以直接写在对应 GitHub Release 中。
 
-Generate a checksum:
+生成校验值：
 
 ```sh
 shasum -a 256 VPNova-vX.Y.Z.ipa
 ```
 
-Recommended format:
+推荐格式：
 
 ```text
 <sha256>  VPNova-vX.Y.Z.ipa

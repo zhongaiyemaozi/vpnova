@@ -1,53 +1,65 @@
-# VPNova Privacy Statement
+# VPNova 隐私说明
 
-Effective date: 2026-06-10
+生效日期：2026-06-10
 
-VPNova is designed as a local iOS/iPadOS proxy utility. It does not require a VPNova account or a VPNova backend server.
+VPNova 是一个本地运行的 iOS/iPadOS 代理工具客户端。它不需要 VPNova 账号，也不依赖 VPNova 后端服务器。
 
-## Data Collection
+## 数据收集
 
-VPNova does not collect personal data.
+VPNova 不收集个人数据。
 
-VPNova does not include:
+VPNova 不包含：
 
-- Third-party analytics SDKs
-- Advertising SDKs
-- Tracking SDKs
-- A user account system
-- A backend telemetry service
+- 第三方统计 SDK
+- 广告 SDK
+- 追踪 SDK
+- 用户账号系统
+- 后端遥测服务
 
-## Local Data
+## 本地数据
 
-The app may store the following data locally on your device:
+VPNova 可能会在你的设备本地保存以下数据：
 
-- Proxy node configurations
-- Routing rules
-- DNS settings
-- App preferences
-- Traffic counters
-- Subscription URLs added by you
+- 代理节点配置
+- 路由规则
+- DNS 设置
+- App 偏好设置
+- 流量统计
+- 你添加的订阅链接
 
-Sensitive proxy credentials should be stored using secure local storage where supported by the app build.
+代理密码、私钥、token 等敏感信息应由 App 使用安全的本地存储能力保存。
 
-## Network Traffic
+## 网络流量
 
-VPNova routes network traffic according to the proxy servers and rules configured by you.
+VPNova 会按照你配置的代理节点和规则路由网络流量。
 
-VPNova does not provide proxy servers and does not operate a proxy backend. The owner of the proxy server you configure may be able to observe traffic routed through that server. Use only servers you trust and have permission to use.
+VPNova 不提供代理服务器，也不运营代理后端。你配置的代理服务器所有者可能能够看到经由该服务器转发的网络流量。请只使用你信任并有权使用的服务器。
 
-## Permissions
+## 权限说明
 
-VPNova may request:
+VPNova 可能请求：
 
-- VPN permission: required to create and manage the local VPN tunnel
-- Camera permission: optional, used only to scan QR codes for proxy node import
+- VPN 权限：用于创建和管理本地 VPN 隧道
+- 相机权限：可选，只用于扫描代理节点二维码
 
-If camera access is denied, QR code scanning will not work, but manual import can still be used.
+如果拒绝相机权限，二维码扫描不可用，但仍可以使用手动导入或 URI 导入。
 
-## Third-Party Services
+## 第三方服务
 
-The app may connect to URLs that you explicitly provide, such as proxy subscription URLs or DNS-over-HTTPS endpoints. VPNova does not control those services.
+VPNova 可能连接你主动填写的 URL，例如代理订阅链接、DNS over HTTPS 地址或代理服务器地址。VPNova 不控制这些第三方服务。
 
-## Contact
+## 公开反馈
 
-Use GitHub Issues in this release repository for privacy questions related to the public IPA distribution. Do not include secrets, credentials, subscription tokens, private keys, or personal data in public issues.
+如果通过 GitHub Issues 反馈问题，请不要发布：
+
+- 代理密码
+- 订阅 token
+- WireGuard 私钥
+- 服务器凭据
+- 节点二维码
+- Apple 开发者证书或描述文件
+- 任何个人隐私信息
+
+反馈地址：
+
+https://github.com/zhongaiyemaozi/vpnova/issues

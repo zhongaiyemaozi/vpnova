@@ -1,10 +1,10 @@
-# Release Assets
+# Release 文件说明
 
-Upload IPA files to GitHub Releases instead of committing them to Git history.
+IPA 文件建议上传到 GitHub Releases，不要直接提交到 Git 历史中。
 
-Recommended release asset names:
+推荐的 Release 附件命名：
 
 - `VPNova-v1.0.0.ipa`
 - `VPNova-v1.0.0.sha256`
 
-GitHub normal Git storage has strict file-size limits. GitHub Releases are better suited for IPA binaries.
+普通 Git 仓库有文件大小限制，也不适合长期保存大体积二进制历史。GitHub Releases 更适合发布 IPA 文件。

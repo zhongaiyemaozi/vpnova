@@ -1,23 +1,27 @@
-# Security Policy
+# 安全政策
 
-## Reporting Security Issues
+## 反馈安全问题
 
-Do not report sensitive security issues in public GitHub Issues.
+请不要在公开 GitHub Issues 中披露敏感安全问题的完整细节。
 
-For now, open a minimal public issue asking for a private contact path, without including exploit details, credentials, private keys, subscription tokens, or user data.
+如果需要反馈安全问题，可以先创建一个简短 Issue，说明需要私下联系，但不要包含漏洞利用细节、账号信息、密码、私钥、订阅 token 或个人数据。
 
-## Sensitive Data
+Issues 地址：
 
-Never include the following in public reports:
+https://github.com/zhongaiyemaozi/vpnova/issues
 
-- Proxy passwords
-- Subscription URLs with tokens
-- WireGuard private keys
-- Server private keys
-- QR codes containing credentials
-- Apple Developer account details
-- Provisioning profiles or certificates
+## 不要公开的信息
 
-## Supported Builds
+请不要在公开反馈中包含：
 
-Only the latest public release is expected to receive active support unless a release note states otherwise.
+- 代理密码
+- 带 token 的订阅链接
+- WireGuard 私钥
+- 服务器私钥
+- 包含凭据的二维码
+- Apple Developer 账号信息
+- 证书、描述文件、`.p12` 文件或私钥文件
+
+## 支持范围
+
+除非 Release notes 另有说明，默认只支持最新公开版本。

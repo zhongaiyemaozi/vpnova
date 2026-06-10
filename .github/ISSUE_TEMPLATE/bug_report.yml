@@ -1,5 +1,5 @@
-name: Bug report
-description: Report an installation, crash, import, VPN connection, or UI problem
+name: 问题反馈
+description: 反馈安装、启动、导入、VPN 连接或界面问题
 title: "[Bug]: "
 labels:
   - bug
@@ -7,85 +7,85 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting a VPNova issue. Remove all secrets before posting logs, screenshots, subscription URLs, QR codes, or proxy details.
+        感谢反馈 VPNova 问题。提交前请删除日志、截图、订阅链接、二维码或节点信息中的所有敏感内容。
   - type: input
     id: app_version
     attributes:
-      label: VPNova version
+      label: VPNova 版本
       placeholder: "1.0.0"
     validations:
       required: true
   - type: input
     id: ios_version
     attributes:
-      label: iOS/iPadOS version
+      label: iOS/iPadOS 版本
       placeholder: "iOS 18.5"
     validations:
       required: true
   - type: input
     id: device
     attributes:
-      label: Device
-      placeholder: "iPhone 15 Pro, iPad mini 6, etc."
+      label: 设备型号
+      placeholder: "iPhone 15 Pro、iPad mini 6 等"
     validations:
       required: true
   - type: dropdown
     id: install_method
     attributes:
-      label: Installation method
+      label: 安装方式
       options:
         - AltStore
         - Sideloadly
         - Xcode
         - Apple Configurator
-        - Enterprise signing
-        - Other
+        - 企业签名
+        - 其他
     validations:
       required: true
   - type: dropdown
     id: area
     attributes:
-      label: Problem area
+      label: 问题类型
       options:
-        - Installation
-        - App launch
-        - VPN connection
-        - Node import
-        - Subscription import
-        - Rules
+        - 安装
+        - App 启动
+        - VPN 连接
+        - 节点导入
+        - 订阅导入
+        - 规则
         - DNS
-        - Traffic stats
+        - 流量统计
         - UI
-        - Other
+        - 其他
     validations:
       required: true
   - type: textarea
     id: description
     attributes:
-      label: What happened?
-      description: Describe the issue clearly.
+      label: 发生了什么？
+      description: 请清楚描述问题。
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Steps to reproduce
+      label: 复现步骤
       placeholder: |
-        1. Open VPNova
-        2. Tap ...
-        3. See ...
+        1. 打开 VPNova
+        2. 点击 ...
+        3. 出现 ...
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Expected behavior
+      label: 预期表现
     validations:
       required: false
   - type: textarea
     id: logs
     attributes:
-      label: Logs or screenshots
-      description: Paste sanitized logs or attach screenshots. Remove tokens, passwords, private keys, and server credentials.
+      label: 日志或截图
+      description: 可以粘贴已脱敏日志或上传截图。请删除 token、密码、私钥、节点地址和服务器凭据。
     validations:
       required: false
