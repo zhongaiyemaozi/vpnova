@@ -10,6 +10,30 @@
 - 添加安装指南、隐私说明、常见问题、安全说明、第三方组件说明。
 - 添加 GitHub Release 模板和 Issue 模板。
 
+## [1.0.0-build3] - 2026-06-12
+
+Apple 平台未签名二次签名包发布。
+
+版本策略：
+
+- Apple 平台 `MARKETING_VERSION` 固定为 `1.0.0`
+- 后续 Apple 发布只递增 build 号
+
+包含：
+
+- iOS/iPadOS 未签名 IPA
+- macOS 未签名 PKG
+- macOS 未签名 ZIP
+- tvOS 未签名 IPA
+- visionOS 未签名 IPA
+- `SHA256SUMS.txt`
+- Release notes
+
+说明：
+
+- iOS、macOS、tvOS 的 VPN 功能需要重签账号具备 NetworkExtension `packet-tunnel-provider` 权限。
+- visionOS 当前为共享 UI/Core shell，不包含 PacketTunnel 运行时。
+
 ## [1.0.0-build2] - 2026-06-10
 
 第一个公开 IPA 版本。

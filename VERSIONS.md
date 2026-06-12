@@ -4,13 +4,57 @@
 
 ## 当前公开版本
 
-最新版本：`v1.0.0-build2`
+最新版本：`v1.0.0-build3`
 
 下载地址：
 
-- Release：https://github.com/zhongaiyemaozi/vpnova/releases/tag/v1.0.0-build2
-- IPA：`VPNova-v1.0.0-build2.ipa`
-- SHA-256：`ca62916d4f43277eca9dc0f189c5022d9233b5bf00ad80e6bac78dfd776075ad`
+- Release：https://github.com/zhongaiyemaozi/vpnova/releases/tag/v1.0.0-build3
+- iOS IPA：`VPNova-v1.0.0-build3-iOS.ipa`
+- macOS PKG：`VPNova-v1.0.0-build3-macOS.pkg`
+- tvOS IPA：`VPNova-v1.0.0-build3-tvOS.ipa`
+- visionOS IPA：`VPNova-v1.0.0-build3-visionOS.ipa`
+- SHA-256：见 `checksums/VPNova-v1.0.0-build3-SHA256SUMS.txt`
+
+## v1.0.0 build 3
+
+状态：已发布
+
+### 发布类型
+
+未签名二次签名包。
+
+Apple 平台版本号固定为 `1.0.0`，本次只递增 build 到 `3`。
+
+### 安装包
+
+- `VPNova-v1.0.0-build3-iOS.ipa`
+- `VPNova-v1.0.0-build3-macOS.pkg`
+- `VPNova-v1.0.0-build3-macOS.zip`
+- `VPNova-v1.0.0-build3-tvOS.ipa`
+- `VPNova-v1.0.0-build3-visionOS.ipa`
+
+### SHA-256
+
+```text
+cc6add9756dc14db3677c9aaeaf6322a8a037e2f552940903e994347b79b140c  VPNova-v1.0.0-build3-iOS.ipa
+b05d3d250bc33d5c1bb20234411db696a4e8d810a12ae8b883d56e4ab788e87d  VPNova-v1.0.0-build3-macOS.pkg
+7a4bf4a68e1e1805f7581b0842ef41ebc36aeacd93c114265e8ac7d2185ec372  VPNova-v1.0.0-build3-macOS.zip
+8213b12b848521b55996422c92b4cfec7f6c9712998571ca1516d99d2c2c2b16  VPNova-v1.0.0-build3-tvOS.ipa
+a4428279d06150e3e90446af4c415175631b65b2c75b11b68b29a8754a006e3e  VPNova-v1.0.0-build3-visionOS.ipa
+```
+
+### 兼容性
+
+- iOS/iPadOS 15.0 或更高版本
+- macOS 13.0 或更高版本
+- tvOS 17.0 或更高版本
+- visionOS 1.0 或更高版本
+- visionOS 当前为共享 UI/Core shell，不包含 PacketTunnel 运行时
+
+### 下载
+
+- Release：https://github.com/zhongaiyemaozi/vpnova/releases/tag/v1.0.0-build3
+- Checksums：`checksums/VPNova-v1.0.0-build3-SHA256SUMS.txt`
 
 ## v1.0.0 build 2
 
