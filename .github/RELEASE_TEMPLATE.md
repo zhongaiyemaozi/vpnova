@@ -2,14 +2,20 @@
 
 ## 下载
 
-- IPA：`VPNova-vX.Y.Z.ipa`
-- SHA-256：`<在这里填写校验值>`
+- iOS IPA：`VPNova-v1.0.0-buildN-iOS.ipa`
+- macOS PKG：`VPNova-v1.0.0-buildN-macOS.pkg`
+- macOS ZIP：`VPNova-v1.0.0-buildN-macOS.zip`
+- tvOS IPA：`VPNova-v1.0.0-buildN-tvOS.ipa`
+- visionOS IPA：`VPNova-v1.0.0-buildN-visionOS.ipa`
+- SHA-256：`SHA256SUMS.txt`
 
 ## 兼容性
 
-- 系统：iOS/iPadOS 15.0 或更高版本
-- 设备：iPhone 和 iPad
-- 安装方式：已签名 IPA 侧载安装
+- iOS/iPadOS 15.0+
+- macOS 13.0+
+- tvOS 17.0+
+- visionOS 1.0+（当前为共享 UI/Core shell，不包含 PacketTunnel 运行时）
+- 安装方式：未签名安装包需要用户自行二次签名
 
 ## 本次更新
 
@@ -25,7 +31,7 @@
 
 ## 安装说明
 
-1. 下载本 Release 中的 IPA。
+1. 下载本 Release 中对应平台的安装包。
 2. 校验 SHA-256。
 3. 使用你自己的签名或侧载工具安装。
 4. 打开 VPNova，并按系统提示允许添加 VPN 配置。
