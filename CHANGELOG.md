@@ -32,10 +32,11 @@
 
 - Android 公共包需要用户使用自己的 Android 签名密钥签名后再安装。
 - 本地 release 单测、lint、APK 和 AAB 构建通过。
+- Android APK/AAB 已补充上传到 latest release `v1.0.0-build3`，用户从最新版本页面即可下载。
 
-## [1.0.0-build3] - 2026-06-12
+## [1.0.0-build3] - 2026-06-12 / 2026-06-15 更新 Android 资产
 
-Apple 平台未签名二次签名包发布。
+Apple 平台未签名二次签名包发布，并在 2026-06-15 补充 Android APK/AAB 到同一个 latest release。
 
 版本策略：
 
@@ -49,12 +50,15 @@ Apple 平台未签名二次签名包发布。
 - macOS 未签名 ZIP
 - tvOS 未签名 IPA
 - visionOS 未签名 IPA
+- Android 未签名 APK
+- Android 未签名 AAB
 - `SHA256SUMS.txt`
 - Release notes
 
 说明：
 
 - iOS、macOS、tvOS 的 VPN 功能需要重签账号具备 NetworkExtension `packet-tunnel-provider` 权限。
+- Android APK/AAB 需要用户使用自己的 Android 签名密钥签名后再安装或分发。
 - visionOS 当前为共享 UI/Core shell，不包含 PacketTunnel 运行时。
 
 ## [1.0.0-build2] - 2026-06-10

@@ -4,9 +4,9 @@
 
 ## 当前公开版本
 
-最新 Apple 版本：`v1.0.0-build3`
+最新 Release：`v1.0.0-build3`
 
-最新 Android 版本：`v1.0.0-android-build1`
+包含 Apple 平台 `v1.0.0-build3` 和 Android `v1.0.0-android-build1` 安装包。
 
 下载地址：
 
@@ -15,15 +15,59 @@
 - macOS PKG：`VPNova-v1.0.0-build3-macOS.pkg`
 - tvOS IPA：`VPNova-v1.0.0-build3-tvOS.ipa`
 - visionOS IPA：`VPNova-v1.0.0-build3-visionOS.ipa`
-- SHA-256：见 `checksums/VPNova-v1.0.0-build3-SHA256SUMS.txt`
-- Android Release：https://github.com/zhongaiyemaozi/vpnova/releases/tag/v1.0.0-android-build1
 - Android APK：`VPNova-v1.0.0-android-build1-unsigned.apk`
 - Android AAB：`VPNova-v1.0.0-android-build1-unsigned.aab`
-- Android SHA-256：见 `checksums/VPNova-v1.0.0-android-build1-SHA256SUMS.txt`
+- SHA-256：见 `checksums/VPNova-v1.0.0-build3-SHA256SUMS.txt`
+
+## v1.0.0 build 3 + Android build 1
+
+状态：已发布，当前 latest release
+
+### 发布类型
+
+Apple 未签名二次签名包 + Android 未签名公开包。
+
+Apple 安装包不能保证直接安装；安装前需要使用用户自己的 Apple 证书、描述文件和 entitlements 重新签名。Android APK/AAB 不能直接安装；安装前需要使用用户自己的 Android 签名密钥签名。
+
+### 安装包
+
+- `VPNova-v1.0.0-build3-iOS.ipa`
+- `VPNova-v1.0.0-build3-macOS.pkg`
+- `VPNova-v1.0.0-build3-macOS.zip`
+- `VPNova-v1.0.0-build3-tvOS.ipa`
+- `VPNova-v1.0.0-build3-visionOS.ipa`
+- `VPNova-v1.0.0-android-build1-unsigned.apk`
+- `VPNova-v1.0.0-android-build1-unsigned.aab`
+
+### SHA-256
+
+```text
+cc6add9756dc14db3677c9aaeaf6322a8a037e2f552940903e994347b79b140c  VPNova-v1.0.0-build3-iOS.ipa
+b05d3d250bc33d5c1bb20234411db696a4e8d810a12ae8b883d56e4ab788e87d  VPNova-v1.0.0-build3-macOS.pkg
+7a4bf4a68e1e1805f7581b0842ef41ebc36aeacd93c114265e8ac7d2185ec372  VPNova-v1.0.0-build3-macOS.zip
+8213b12b848521b55996422c92b4cfec7f6c9712998571ca1516d99d2c2c2b16  VPNova-v1.0.0-build3-tvOS.ipa
+a4428279d06150e3e90446af4c415175631b65b2c75b11b68b29a8754a006e3e  VPNova-v1.0.0-build3-visionOS.ipa
+8fa1b3c556ae9df28f0cd96544f94e5deda19d1490fd088c25c66dac00820794  VPNova-v1.0.0-android-build1-unsigned.apk
+916d3098f56315d7994c234674fb54bdf17b0f4dd58327237cff2fcbe7a842c5  VPNova-v1.0.0-android-build1-unsigned.aab
+```
+
+### 兼容性
+
+- iOS/iPadOS 15.0 或更高版本
+- macOS 13.0 或更高版本
+- tvOS 17.0 或更高版本
+- visionOS 1.0 或更高版本
+- Android 6.0 / API 23 或更高版本
+- visionOS 当前为共享 UI/Core shell，不包含 PacketTunnel 运行时
+
+### 下载
+
+- Release：https://github.com/zhongaiyemaozi/vpnova/releases/tag/v1.0.0-build3
+- Checksums：`checksums/VPNova-v1.0.0-build3-SHA256SUMS.txt`
 
 ## v1.0.0 Android build 1
 
-状态：已发布
+状态：已发布，资产也已补充到 latest release `v1.0.0-build3`
 
 ### 发布类型
 
@@ -60,7 +104,8 @@ Android 未签名公开包。
 
 ### 下载
 
-- Release：https://github.com/zhongaiyemaozi/vpnova/releases/tag/v1.0.0-android-build1
+- Latest Release：https://github.com/zhongaiyemaozi/vpnova/releases/tag/v1.0.0-build3
+- Android-only Release：https://github.com/zhongaiyemaozi/vpnova/releases/tag/v1.0.0-android-build1
 - Checksums：`checksums/VPNova-v1.0.0-android-build1-SHA256SUMS.txt`
 
 ## v1.0.0 build 3
