@@ -1,10 +1,10 @@
 # VPNova
 
-> Apple-platform rule-based proxy client - public package release page
+> Cross-platform rule-based proxy client - public package release page
 
 [简体中文](README.md) | [Versions](VERSIONS.md) | [Installation](INSTALL.md) | [Privacy](PRIVACY.md) | [FAQ](FAQ.md) | [Issues](https://github.com/zhongaiyemaozi/vpnova/issues) | [Releases](https://github.com/zhongaiyemaozi/vpnova/releases)
 
-VPNova is an Apple-platform rule-based proxy utility client. Current public packages cover iOS/iPadOS, macOS, tvOS, and visionOS. It helps users manage their own proxy nodes and route traffic by domain, IP, geolocation, and fallback rules.
+VPNova is a cross-platform rule-based proxy utility client. Current public packages cover iOS/iPadOS, macOS, tvOS, visionOS, and Android. It helps users manage their own proxy nodes and route traffic by domain, IP, geolocation, and fallback rules.
 
 **This repository is used only for public package distribution, release notes, installation guidance, privacy information, and issue feedback. The VPNova app source code is not published in this repository.**
 
@@ -14,7 +14,7 @@ This repository is prepared as the public release entry for VPNova. Public packa
 
 Version numbers, build numbers, new features, and known issues are tracked separately in [VERSIONS.md](VERSIONS.md).
 
-Current packages are unsigned/resignable builds. They cannot be assumed to install directly; users must re-sign them with their own Apple certificate, provisioning profiles, and entitlements.
+Current Apple packages are unsigned/resignable builds. They cannot be assumed to install directly; users must re-sign them with their own Apple certificate, provisioning profiles, and entitlements. Android public packages are also unsigned and must be signed with the user's own Android signing key before installation.
 
 Each release should include:
 
@@ -23,6 +23,8 @@ Each release should include:
 - `VPNova-v1.0.0-buildN-macOS.zip` - macOS app archive
 - `VPNova-v1.0.0-buildN-tvOS.ipa` - tvOS package
 - `VPNova-v1.0.0-buildN-visionOS.ipa` - visionOS package
+- `VPNova-v1.0.0-android-buildN-unsigned.apk` - unsigned Android APK
+- `VPNova-v1.0.0-android-buildN-unsigned.aab` - unsigned Android App Bundle
 - `SHA256SUMS.txt` - SHA-256 checksums
 - Release notes - changes, compatibility, and known issues
 
@@ -38,7 +40,7 @@ Good use cases:
 
 - Manage personal proxy nodes and subscriptions
 - Route domains or IP ranges through proxy, direct, or reject policies
-- Test network connectivity on iPhone, iPad, Mac, Apple TV, or Apple Vision devices
+- Test network connectivity on iPhone, iPad, Mac, Apple TV, Apple Vision, or Android devices
 - Use local proxy tooling for development, debugging, and network research
 - Import existing node URIs, QR codes, or subscription links
 
@@ -59,7 +61,7 @@ VPNova v1.0 focuses on the core proxy experience:
 - Rule engine: `DOMAIN`, `DOMAIN-SUFFIX`, `DOMAIN-KEYWORD`, `GEOIP`, `IP-CIDR`, and `FINAL`
 - DNS: custom DNS and DNS over HTTPS
 - Traffic stats: real-time upload/download speed and usage
-- Native SwiftUI experience: iPhone/iPad, Mac, Apple TV, Apple Vision, dark mode, light mode, English, and Simplified Chinese
+- Native SwiftUI / Jetpack Compose experience: iPhone/iPad, Mac, Apple TV, Apple Vision, Android, dark mode, light mode, English, and Simplified Chinese
 
 ## Supported Platforms
 
@@ -69,6 +71,7 @@ VPNova v1.0 focuses on the core proxy experience:
 | macOS 13.0+ | `.pkg` / `.zip` | Main app + PacketTunnel |
 | tvOS 17.0+ | `.ipa` | Main app + PacketTunnel |
 | visionOS 1.0+ | `.ipa` | Shared UI/Core shell only; no PacketTunnel runtime yet |
+| Android 6.0+ / API 23+ | `.apk` / `.aab` | Android VpnService + libbox runtime |
 
 ## Download And Install
 
@@ -91,9 +94,10 @@ See [INSTALL.md](INSTALL.md) for details.
 
 ## Compatibility
 
-- Device: iPhone, iPad, Mac, Apple TV, or Apple Vision
-- System: iOS/iPadOS 15.0+, macOS 13.0+, tvOS 17.0+, or visionOS 1.0+
+- Device: iPhone, iPad, Mac, Apple TV, Apple Vision, or Android device
+- System: iOS/iPadOS 15.0+, macOS 13.0+, tvOS 17.0+, visionOS 1.0+, or Android 6.0+
 - VPN permission: required on iOS/iPadOS, macOS, and tvOS to add the system VPN configuration
+- Android VPN permission: required to create the Android VPN connection
 - Camera permission: optional, used only for QR code node import
 
 VPN behavior must be validated on physical devices. Simulators cannot fully test Packet Tunnel behavior. The current visionOS public package does not include the PacketTunnel runtime.
@@ -116,7 +120,7 @@ Read [PRIVACY.md](PRIVACY.md) for details.
 
 Use [GitHub Issues](https://github.com/zhongaiyemaozi/vpnova/issues) for installation problems, crashes, import failures, VPN connection problems, UI issues, and compatibility reports.
 
-Do not post proxy passwords, subscription tokens, private keys, server credentials, QR configurations, or Apple signing files in public issues.
+Do not post proxy passwords, subscription tokens, private keys, server credentials, QR configurations, Apple signing files, Android keystores, or signing passwords in public issues.
 
 ## Source And License Notice
 

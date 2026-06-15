@@ -2,7 +2,7 @@
 
 生效日期：2026-06-10
 
-VPNova 是一个本地运行的 iOS/iPadOS 代理工具客户端。它不需要 VPNova 账号，也不依赖 VPNova 后端服务器。
+VPNova 是一个本地运行的跨平台代理工具客户端。它不需要 VPNova 账号，也不依赖 VPNova 后端服务器。
 
 ## 数据收集
 
@@ -58,6 +58,7 @@ VPNova 可能连接你主动填写的 URL，例如代理订阅链接、DNS over 
 - 服务器凭据
 - 节点二维码
 - Apple 开发者证书或描述文件
+- Android keystore 或签名密码
 - 任何个人隐私信息
 
 反馈地址：

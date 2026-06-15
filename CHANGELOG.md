@@ -1,6 +1,6 @@
 # 更新日志
 
-这里记录 VPNova 公开 IPA 版本的主要变化。
+这里记录 VPNova 公开安装包版本的主要变化。
 
 ## [Unreleased]
 
@@ -9,6 +9,29 @@
 - 添加 `VERSIONS.md`，单独展示版本号、构建号、新增功能和已知问题。
 - 添加安装指南、隐私说明、常见问题、安全说明、第三方组件说明。
 - 添加 GitHub Release 模板和 Issue 模板。
+
+## [1.0.0-android-build1] - 2026-06-15
+
+第一个 Android 公开包发布。
+
+发布类型：未签名 Android APK/AAB。
+
+包含：
+
+- Android Kotlin / Jetpack Compose 原生客户端
+- Android VpnService 接入
+- libbox Android runtime
+- 节点 URI、二维码、手动输入和订阅导入
+- 规则、全局代理、直连模式
+- 规则管理、DNS 设置、流量状态
+- 未签名 all-ABI APK
+- 未签名 Android App Bundle
+- `SHA256SUMS.txt`
+
+说明：
+
+- Android 公共包需要用户使用自己的 Android 签名密钥签名后再安装。
+- 本地 release 单测、lint、APK 和 AAB 构建通过。
 
 ## [1.0.0-build3] - 2026-06-12
 

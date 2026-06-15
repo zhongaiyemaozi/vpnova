@@ -6,15 +6,19 @@
 .vscode/
 
 # Local release artifacts
-# Upload IPA files to GitHub Releases instead of committing large binaries to Git.
+# Upload install packages to GitHub Releases instead of committing large binaries to Git.
 release-assets/
 *.ipa
+*.apk
+*.aab
 *.xcarchive
 *.dSYM.zip
 *.mobileprovision
 *.p12
 *.cer
 *.key
+*.jks
+*.keystore
 
 # Local notes that may contain secrets
 local/
