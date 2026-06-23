@@ -16,6 +16,8 @@ VPNova 是一款跨平台规则代理工具客户端，当前公开包覆盖 iOS
 
 当前发布的 Apple 安装包是未签名二次签名包，不能保证直接安装；用户需要使用自己的 Apple 证书、描述文件和 entitlements 重新签名。Android 公共包同样以未签名形式发布，用户需要使用自己的 Android 签名密钥签名后再安装。
 
+iOS 版本已经通过 TestFlight 审核。需要通过 TestFlight 下载和测试 VPNova 的用户，可以发送邮件到 `zhongaiyemaozi@outlook.com`，我会根据邮箱添加测试员。GitHub Release 中的未签名 IPA 仍保留给需要自行重签名或侧载的用户。
+
 发布时建议下载以下文件：
 
 - `VPNova-v1.0.0-buildN-iOS.ipa` - iOS/iPadOS 安装包
@@ -95,6 +97,18 @@ VPNova v1.0 计划围绕核心代理体验：
 - 普通 URI 列表
 
 ## 下载与安装
+
+### iOS TestFlight
+
+iOS 版本已通过 TestFlight 审核。需要 TestFlight 下载入口的用户，请发送邮件到：
+
+```text
+zhongaiyemaozi@outlook.com
+```
+
+邮件中请写明希望加入 VPNova iOS TestFlight 测试，我会按邮箱添加测试员。
+
+### GitHub Releases
 
 最新版安装包将发布在：
 

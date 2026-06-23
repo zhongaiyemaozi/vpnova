@@ -16,6 +16,8 @@ Version numbers, build numbers, new features, and known issues are tracked separ
 
 Current Apple packages are unsigned/resignable builds. They cannot be assumed to install directly; users must re-sign them with their own Apple certificate, provisioning profiles, and entitlements. Android public packages are also unsigned and must be signed with the user's own Android signing key before installation.
 
+The iOS build has passed TestFlight review. If you want to download and test VPNova through TestFlight, email `zhongaiyemaozi@outlook.com`; I will add testers by email address. The unsigned GitHub Release IPA remains available for users who prefer self-signing or sideloading.
+
 Each release should include:
 
 - `VPNova-v1.0.0-buildN-iOS.ipa` - iOS/iPadOS package
@@ -74,6 +76,18 @@ VPNova v1.0 focuses on the core proxy experience:
 | Android 6.0+ / API 23+ | `.apk` / `.aab` | Android VpnService + libbox runtime |
 
 ## Download And Install
+
+### iOS TestFlight
+
+The iOS build has passed TestFlight review. To request TestFlight access, email:
+
+```text
+zhongaiyemaozi@outlook.com
+```
+
+Please mention that you want to join the VPNova iOS TestFlight test, and I will add testers by email address.
+
+### GitHub Releases
 
 Get the latest packages from:
 

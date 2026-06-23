@@ -4,6 +4,16 @@
 
 由于 VPNova 暂不通过 App Store 或 Google Play 发布，安装过程取决于你自己的签名、侧载或设备管理方式。
 
+## iOS TestFlight
+
+iOS 版本已经通过 TestFlight 审核。需要通过 TestFlight 下载和测试 VPNova 的用户，可以发送邮件到：
+
+```text
+zhongaiyemaozi@outlook.com
+```
+
+邮件中请写明希望加入 VPNova iOS TestFlight 测试，我会根据邮箱添加测试员。
+
 ## 下载地址
 
 请从官方 GitHub Releases 下载：

@@ -10,6 +10,10 @@
 
 VPN 和代理类 App 在 App Store / Google Play 上架时会受到 VPN 权限、账号类型、审核规则和应用描述等多方面限制。当前这个仓库用于提供一个公开下载入口，让能够自行签名或侧载安装包的用户进行安装。
 
+## 可以通过 TestFlight 安装 iOS 版本吗？
+
+可以。iOS 版本已经通过 TestFlight 审核。需要 TestFlight 下载入口的用户，请发送邮件到 `zhongaiyemaozi@outlook.com`，我会根据邮箱添加测试员。
+
 ## VPNova 是否提供免费节点？
 
 不提供。VPNova 是客户端工具，不是代理服务商。你需要使用自己的代理服务器、订阅链接或配置 URI。
