@@ -12,7 +12,11 @@ VPN 和代理类 App 在 App Store / Google Play 上架时会受到 VPN 权限�
 
 ## 可以通过 TestFlight 安装 iOS 版本吗？
 
-可以。iOS 版本已经通过 TestFlight 审核。需要 TestFlight 下载入口的用户，请发送邮件到 `zhongaiyemaozi@outlook.com`，我会根据邮箱添加测试员。
+可以。iOS 版本已经通过 TestFlight 审核，暂未上架 App Store。公开加入链接：
+
+```text
+https://testflight.apple.com/join/xgwEPtp2
+```
 
 ## VPNova 是否提供免费节点？
 

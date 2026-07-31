@@ -4,7 +4,8 @@
 
 ## [Unreleased]
 
-- 说明 iOS 版本已通过 TestFlight 审核，并补充通过邮件申请 TestFlight 测试员的入口。
+- 补充 App Store Connect 公开 TestFlight 加入链接：`https://testflight.apple.com/join/xgwEPtp2`（暂未上架 App Store）。
+- 说明 iOS 版本已通过 TestFlight 审核。
 - 准备公开 IPA 发布仓库。
 - 添加中文主 README 和英文 README。
 - 添加 `VERSIONS.md`，单独展示版本号、构建号、新增功能和已知问题。

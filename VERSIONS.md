@@ -8,7 +8,7 @@
 
 包含 Apple 平台 `v1.0.0-build3` 和 Android `v1.0.0-android-build1` 安装包。
 
-iOS TestFlight 状态：已通过审核。需要 TestFlight 下载和测试的用户，请发送邮件到 `zhongaiyemaozi@outlook.com`，我会根据邮箱添加测试员。
+iOS TestFlight 状态：已通过审核，暂未上架 App Store。公开加入链接：`https://testflight.apple.com/join/xgwEPtp2`
 
 下载地址：
 

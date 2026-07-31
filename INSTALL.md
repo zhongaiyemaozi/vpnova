@@ -6,13 +6,11 @@
 
 ## iOS TestFlight
 
-iOS 版本已经通过 TestFlight 审核。需要通过 TestFlight 下载和测试 VPNova 的用户，可以发送邮件到：
+iOS 版本已经通过 TestFlight 审核，暂未上架 App Store。请通过公开链接加入测试（需先安装 [TestFlight](https://apps.apple.com/app/testflight/id899247664)）：
 
 ```text
-zhongaiyemaozi@outlook.com
+https://testflight.apple.com/join/xgwEPtp2
 ```
-
-邮件中请写明希望加入 VPNova iOS TestFlight 测试，我会根据邮箱添加测试员。
 
 ## 下载地址
 

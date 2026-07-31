@@ -1,11 +1,11 @@
 # STATUS — VPNova 公开发布
 
-最后更新：2026-07-24
+最后更新：2026-07-31
 
 ## 已完成
 
 - 公开发布入口 README / INSTALL / PRIVACY / FAQ / VERSIONS
-- TestFlight 说明；GitHub Releases 未签名包分发流程
+- TestFlight 公开链接：`https://testflight.apple.com/join/xgwEPtp2`；GitHub Releases 未签名包分发流程
 
 ## 未完成
 
