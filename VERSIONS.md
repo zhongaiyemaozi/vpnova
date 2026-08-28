@@ -4,26 +4,60 @@
 
 ## 当前公开版本
 
-最新 Release：`v1.0.0-build3`
+最新 Release：`v1.0.0-build16`（仅 iOS）
 
-包含 Apple 平台 `v1.0.0-build3` 和 Android `v1.0.0-android-build1` 安装包。
+本次只更新 iOS 未签名二次签名包。macOS / tvOS / visionOS / Android 未重新打包，仍见既有 Release。
 
 iOS TestFlight 状态：已通过审核，暂未上架 App Store。公开加入链接：`https://testflight.apple.com/join/xgwEPtp2`
 
 下载地址：
 
-- Release：https://github.com/zhongaiyemaozi/vpnova/releases/tag/v1.0.0-build3
-- iOS IPA：`VPNova-v1.0.0-build3-iOS.ipa`
-- macOS PKG：`VPNova-v1.0.0-build3-macOS.pkg`
-- tvOS IPA：`VPNova-v1.0.0-build3-tvOS.ipa`
-- visionOS IPA：`VPNova-v1.0.0-build3-visionOS.ipa`
-- Android APK：`VPNova-v1.0.0-android-build1-unsigned.apk`
-- Android AAB：`VPNova-v1.0.0-android-build1-unsigned.aab`
-- SHA-256：见 `checksums/VPNova-v1.0.0-build3-SHA256SUMS.txt`
+- Release：https://github.com/zhongaiyemaozi/vpnova/releases/tag/v1.0.0-build16
+- iOS IPA：`VPNova-v1.0.0-build16-iOS.ipa`
+- SHA-256：见 `checksums/VPNova-v1.0.0-build16-SHA256SUMS.txt`
+- 其他平台既有包：https://github.com/zhongaiyemaozi/vpnova/releases/tag/v1.0.0-build3
+
+## v1.0.0 build 16
+
+状态：已发布，当前 latest release（仅 iOS）
+
+### 发布类型
+
+iOS 未签名二次签名包。macOS / tvOS / visionOS / Android 本次未打包。
+
+这个 IPA 不能保证直接安装。安装前需要使用用户自己的 Apple 证书、描述文件和 entitlements 重新签名：
+
+- `Payload/VPNova.app`
+- `Payload/VPNova.app/PlugIns/PacketTunnel.appex`
+- `Payload/VPNova.app/PlugIns/VPNovaWidgetsExtension.appex`
+- App 内的 Frameworks / dylib，如果重签工具要求递归签名
+
+PacketTunnel 需要签名账号具备 NetworkExtension `packet-tunnel-provider` 权限。
+
+### 安装包
+
+- `VPNova-v1.0.0-build16-iOS.ipa`
+
+### SHA-256
+
+```text
+353f1e37ec35fd77a8143c936263a03dada45d2abbb2b44a50a044eb9b3a2520  VPNova-v1.0.0-build16-iOS.ipa
+```
+
+### 兼容性
+
+- iOS/iPadOS 15.0 或更高版本
+- iPhone 和 iPad
+- VPN 连接需要真实设备验证
+
+### 下载
+
+- Release：https://github.com/zhongaiyemaozi/vpnova/releases/tag/v1.0.0-build16
+- Checksums：`checksums/VPNova-v1.0.0-build16-SHA256SUMS.txt`
 
 ## v1.0.0 build 3 + Android build 1
 
-状态：已发布，当前 latest release
+状态：已发布
 
 ### 发布类型
 

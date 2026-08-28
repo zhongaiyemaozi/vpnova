@@ -7,6 +7,21 @@
 - 补充 App Store Connect 公开 TestFlight 加入链接：`https://testflight.apple.com/join/xgwEPtp2`（暂未上架 App Store）。
 - 说明 iOS 版本已通过 TestFlight 审核。
 - 准备公开 IPA 发布仓库。
+
+## [1.0.0-build16] - 2026-08-28
+
+仅更新 iOS 未签名二次签名包。版本号保持 `1.0.0`，build 递增到 `16`。未提交 App Store 审核。
+
+包含：
+
+- iOS/iPadOS 未签名 IPA
+- `SHA256SUMS.txt`
+- Release notes
+
+说明：
+
+- 公开 TestFlight 仍为 `https://testflight.apple.com/join/xgwEPtp2`
+- macOS / tvOS / visionOS / Android 本次未重新打包
 - 添加中文主 README 和英文 README。
 - 添加 `VERSIONS.md`，单独展示版本号、构建号、新增功能和已知问题。
 - 添加安装指南、隐私说明、常见问题、安全说明、第三方组件说明。
